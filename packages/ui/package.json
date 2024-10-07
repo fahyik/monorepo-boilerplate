@@ -1,0 +1,30 @@
+{
+  "name": "@packagename/ui",
+  "version": "0.0.0",
+  "exports": {
+    "./styles.css": "./dist/index.css",
+    "./button": "./src/button.tsx",
+    "./spinner": "./src/spinner.tsx"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
+    "lint": "eslint \"**/*.ts*\" --max-warnings 0",
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^9.12.0",
+    "@packagename/eslint-config": "*",
+    "@packagename/typescript-config": "*",
+    "@packagename/tailwind-config": "*",
+    "typescript": "^5.6.2",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.6",
+    "autoprefixer": "^10.4.18"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

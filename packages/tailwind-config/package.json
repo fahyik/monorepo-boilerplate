@@ -1,0 +1,12 @@
+{
+  "name": "@packagename/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./tailwind.config.ts"
+  },
+  "devDependencies": {
+    "@packagename/typescript-config": "*",
+    "tailwindcss": "^3.4.6"
+  }
+}
