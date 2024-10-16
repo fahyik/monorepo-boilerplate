@@ -1,15 +1,10 @@
-import sharedConfig from "@packagename/tailwind-config";
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
-const config: Pick<
-  Config,
-  "darkMode" | "prefix" | "presets" | "content" | "theme" | "plugins"
-> = {
+const config: Omit<Config, "darkMode" | "prefix" | "content" | "safelist"> = {
   darkMode: ["class"],
-  content: ["./src/**/*.tsx"],
-  prefix: "ui-",
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -19,6 +14,10 @@ const config: Pick<
       },
     },
     extend: {
+      backgroundImage: {
+        "glow-conic":
+          "conic-gradient(from 180deg at 50% 50%, #2a8af6 0deg, #a853ba 180deg, #e92a67 360deg)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -78,8 +77,6 @@ const config: Pick<
       },
     },
   },
-  presets: [sharedConfig],
   plugins: [tailwindcssAnimate],
 };
-
 export default config;

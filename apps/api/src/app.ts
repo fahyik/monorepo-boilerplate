@@ -1,4 +1,3 @@
-import { correlationIdMiddleware, logger } from "@packagename/logger";
 import { json, urlencoded } from "body-parser";
 import cors from "cors";
 import express from "express";
@@ -9,6 +8,8 @@ import { dbConnection } from "./db";
 import { auth } from "./middleware/auth";
 import { errorHandler } from "./middleware/error-handler";
 import { addBeforeExitHandler } from "./server/process-lifecycle";
+
+import { correlationIdMiddleware, logger } from "@packagename/logger";
 
 export async function createServer() {
   logger.debug(`🟠🟠🟠 creating server ..`);

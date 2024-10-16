@@ -1,10 +1,9 @@
-import "@packagename/ui/styles.css";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Head from "next/head";
 
-import "./globals.css";
+import "@packagename/ui/globals.css";
 
 const montserrat = localFont({
   src: "./fonts/montserrat.ttf",

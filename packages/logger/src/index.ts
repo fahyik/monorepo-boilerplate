@@ -84,5 +84,5 @@ const errorFormatter = winston.format((info: TransformableInfo) => {
 });
 
 export const logger = createLogger({
-  defaultMeta: { service: "chalybe-api" },
+  defaultMeta: { service: "@packagename-api" },
 });
