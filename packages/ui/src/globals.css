@@ -10,7 +10,7 @@
 
 @layer base {
   :root {
-    --font-sans: "Inter", "Helvetica", "Arial", sans-serif;
+    --font-sans: font-sans;
     --background: 224 51% 100%;
     --foreground: 224 5% 10%;
     --card: 224 50% 100%;

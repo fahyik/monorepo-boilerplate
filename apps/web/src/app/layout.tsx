@@ -1,23 +1,22 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Head from "next/head";
 
 import "@packagename/ui/globals.css";
 
-const montserrat = localFont({
-  src: "./fonts/montserrat.ttf",
-  variable: "--font-montserrat",
-});
+// const montserrat = localFont({
+//   src: "./fonts/montserrat.ttf",
+//   variable: "--font-montserrat",
+// });
 
-const lora = localFont({
-  src: "./fonts/lora.ttf",
-  variable: "--font-lora",
-});
+// const lora = localFont({
+//   src: "./fonts/lora.ttf",
+//   variable: "--font-lora",
+// });
 
 export const metadata: Metadata = {
-  title: "miu6",
-  description: "created by the miusters",
+  title: "xxx",
+  description: "xxx",
 };
 
 export default function RootLayout({
@@ -34,12 +33,8 @@ export default function RootLayout({
         ></meta>
       </Head>
 
-      <body
-        className={`${montserrat.variable} ${lora.variable} antialiased flex flex-col min-h-screen`}
-      >
-        <div className="flex flex-grow flex-col font-[family-name:var(--font-lora)]">
-          {children}
-        </div>
+      <body className={`antialiased`}>
+        <main>{children}</main>
         <Analytics />
       </body>
     </html>
