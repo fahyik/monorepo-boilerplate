@@ -1,6 +1,7 @@
-import { logger } from "@packagename/logger";
 import { NextFunction, Request, Response } from "express";
 import { UnauthorizedError } from "express-jwt";
+
+import { logger } from "../logger";
 
 // import { JwksRateLimitError } from "jwks-rsa";
 

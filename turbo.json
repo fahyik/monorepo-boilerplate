@@ -12,6 +12,7 @@
         "CLUSTER_ENVIRONMENT",
         "LOCAL_LOG_DUMP",
         "PACKAGE_VERSION",
+        "PACKAGE_NAME",
         "DB_HOSTNAME",
         "DB_PORT",
         "DB_NAME",

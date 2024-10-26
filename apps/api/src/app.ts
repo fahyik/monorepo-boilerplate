@@ -1,22 +1,25 @@
 import { json, urlencoded } from "body-parser";
 import cors from "cors";
 import express from "express";
-import morgan from "morgan";
 
 import { apiRouter } from "./controllers/api";
 import { dbConnection } from "./db";
+import { logger } from "./logger";
 import { auth } from "./middleware/auth";
 import { errorHandler } from "./middleware/error-handler";
 import { addBeforeExitHandler } from "./server/process-lifecycle";
 
-import { correlationIdMiddleware, logger } from "@packagename/logger";
+import { correlationIdMiddleware, getHttpLogger } from "@packagename/logger";
 
 export async function createServer() {
   logger.debug(`🟠🟠🟠 creating server ..`);
 
   const app = express();
 
-  app.use(morgan("dev")).disable("x-powered-by").use(correlationIdMiddleware);
+  app
+    .disable("x-powered-by")
+    .use(correlationIdMiddleware)
+    .use(getHttpLogger(process.env.PACKAGE_NAME ?? "local"));
 
   app.get("/ready", async (_req, res) => {
     return res.json({

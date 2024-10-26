@@ -1,4 +1,4 @@
-import { logger } from "@packagename/logger";
+import { logger } from "../logger";
 
 type Event = NodeJS.Signals | "uncaughtException";
 
