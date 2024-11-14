@@ -4,9 +4,8 @@ module.exports = {
   reactStrictMode: true,
   transpilePackages: ["@packagename/ui"],
   output: "standalone",
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, "../../"),
-  },
+  outputFileTracingRoot: path.join(__dirname, "../../"),
+  experimental: {},
   images: {
     remotePatterns: [
       {
