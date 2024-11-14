@@ -1,6 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
-import type { Metadata } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 
 import "@packagename/ui/globals.css";
 
@@ -19,6 +18,11 @@ export const metadata: Metadata = {
   description: "xxx",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,13 +30,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
-      </Head>
-
       <body className={`antialiased`}>
         <main>{children}</main>
         <Analytics />
