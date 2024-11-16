@@ -52,6 +52,13 @@ module.exports = [
           caughtErrorsIgnorePattern: "^_",
         },
       ],
+      "@typescript-eslint/no-unused-expressions": [
+        "warn",
+        {
+          allowShortCircuit: false,
+          allowTernary: false,
+        },
+      ],
     },
   },
   {

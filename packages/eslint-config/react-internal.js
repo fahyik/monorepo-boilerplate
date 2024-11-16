@@ -40,6 +40,16 @@ module.exports = [
         },
       },
     },
+
+    rules: {
+      "@typescript-eslint/no-unused-expressions": [
+        "warn",
+        {
+          allowShortCircuit: false,
+          allowTernary: false,
+        },
+      ],
+    },
   },
   {
     files: ["**/*.js?(x)", "**/*.ts?(x)"],

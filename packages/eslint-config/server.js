@@ -44,6 +44,13 @@ module.exports = tseslint.config(
       "import/no-cycle": "error",
       "no-unsafe-optional-chaining": "warn",
       "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-unused-expressions": [
+        "warn",
+        {
+          allowShortCircuit: false,
+          allowTernary: false,
+        },
+      ],
       eqeqeq: ["error"],
     },
   },
