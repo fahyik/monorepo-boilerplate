@@ -23,7 +23,6 @@ export default tseslint.config(
       "**/*.js",
       "**/*.config.ts",
       "**/*.config.js",
-      "**/*.config.mjs",
     ],
   },
   eslint.configs.recommended,
