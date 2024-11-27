@@ -23,6 +23,7 @@ export default tseslint.config(
       "**/.*.js",
       "**/*.config.js",
       "**/*.config.ts",
+      "**/*.config.mjs",
       "**/node_modules/",
       "**/.next",
     ],

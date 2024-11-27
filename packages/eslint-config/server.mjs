@@ -18,7 +18,13 @@ const compat = new FlatCompat({
 export default tseslint.config(
   ...compat.extends("turbo"),
   {
-    ignores: ["build/", "**/*.js", "**/*.config.ts"],
+    ignores: [
+      "build/",
+      "**/*.js",
+      "**/*.config.ts",
+      "**/*.config.js",
+      "**/*.config.mjs",
+    ],
   },
   eslint.configs.recommended,
   tseslint.configs.recommended,
