@@ -4,13 +4,14 @@
   "tailwind": {
     "config": "./tailwind.config.ts",
     "css": "./src/globals.css",
-    "baseColor": "slate",
+    "baseColor": "neutral",
     "cssVariables": true,
     "prefix": ""
   },
   "aliases": {
     "utils": "@packagename/ui/lib/utils",
-    "components": "@packagename/ui/components"
+    "components": "@packagename/ui/components",
+    "hooks": "@packagename/ui/hooks"
   },
   "rsc": true
 }
