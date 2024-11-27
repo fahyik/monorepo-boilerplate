@@ -1,9 +1,13 @@
-const eslint = require("@eslint/js");
-const eslintConfigPrettier = require("eslint-config-prettier");
-const imprt = require("eslint-plugin-import");
-const tseslint = require("typescript-eslint");
+import { FlatCompat } from "@eslint/eslintrc";
+import eslint from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
+import imprt from "eslint-plugin-import";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import tseslint from "typescript-eslint";
 
-const { FlatCompat } = require("@eslint/eslintrc");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
@@ -11,13 +15,13 @@ const compat = new FlatCompat({
   allConfig: eslint.configs.all,
 });
 
-module.exports = tseslint.config(
+export default tseslint.config(
+  ...compat.extends("turbo"),
   {
     ignores: ["build/", "**/*.js", "**/*.config.ts"],
   },
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...compat.extends("turbo"),
+  tseslint.configs.recommended,
   {
     languageOptions: {
       parser: tseslint.parser,
