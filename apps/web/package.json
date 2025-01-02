@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "eslint . --max-warnings 0",
+    "lint": "tsc --noEmit && eslint . --max-warnings 0",
     "start": "next start"
   },
   "dependencies": {
@@ -14,16 +14,16 @@
     "@vercel/analytics": "^1.4.0",
     "next": "^15.0.3",
     "next-themes": "^0.4.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.0.3",
     "@packagename/eslint-config": "*",
     "@packagename/typescript-config": "*",
     "@types/node": "^22.10.3",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.14.0",
     "postcss": "^8.4.49",
