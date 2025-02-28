@@ -1,6 +1,7 @@
 import { FlatCompat } from "@eslint/eslintrc";
 import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
+import turbo from "eslint-plugin-turbo";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import tseslint from "typescript-eslint";
@@ -17,7 +18,6 @@ const compat = new FlatCompat({
 export default tseslint.config(
   ...compat.extends("next"),
   ...compat.extends("next/core-web-vitals"),
-  ...compat.extends("turbo"),
   {
     ignores: [
       "**/.*.js",
@@ -30,6 +30,9 @@ export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   {
+    plugins: {
+      turbo,
+    },
     files: ["**/*.js?(x)", "**/*.ts?(x)"],
     rules: {
       "@typescript-eslint/no-unused-vars": [

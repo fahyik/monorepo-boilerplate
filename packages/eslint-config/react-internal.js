@@ -1,17 +1,9 @@
 const onlyWarn = require("eslint-plugin-only-warn");
 const eslintConfigPrettier = require("eslint-config-prettier");
 const globals = require("globals");
-const js = require("@eslint/js");
 const eslint = require("@eslint/js");
-
+const turbo = require("eslint-plugin-turbo");
 const tseslint = require("typescript-eslint");
-const { FlatCompat } = require("@eslint/eslintrc");
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
 
 module.exports = [
   {
@@ -19,10 +11,11 @@ module.exports = [
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-  ...compat.extends("turbo"),
+
   {
     plugins: {
       "only-warn": onlyWarn,
+      turbo,
     },
 
     languageOptions: {
