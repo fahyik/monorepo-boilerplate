@@ -48,9 +48,9 @@ yarn-error.log*
 
 # Caches
 .eslintcache
-/tsconfig.tsbuildinfo
-/tsconfig.strict.tsbuildinfo
-/.jest-cache/
+**/tsconfig.tsbuildinfo
+**/tsconfig.strict.tsbuildinfo
+**/.jest-cache/
 
 # os
 .DS_Store
