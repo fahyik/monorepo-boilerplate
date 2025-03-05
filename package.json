@@ -21,13 +21,13 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "turbo": "^2.4.4"
   },
-  "packageManager": "npm@11.1.0",
+  "packageManager": "npm@11.2.0",
   "engines": {
     "node": ">=22.14.0",
-    "npm": ">=11.1.0"
+    "npm": ">=11.2.0"
   },
   "volta": {
     "node": "22.14.0",
-    "npm": "11.1.0"
+    "npm": "11.2.0"
   }
 }
