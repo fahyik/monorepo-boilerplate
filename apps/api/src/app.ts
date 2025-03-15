@@ -19,12 +19,12 @@ export async function createServer() {
   app
     .disable("x-powered-by")
     .use(correlationIdMiddleware)
-    .use(getHttpLogger(process.env.PACKAGE_NAME ?? "local"));
+    .use(getHttpLogger(process.env.npm_package_name ?? "local"));
 
   app.get("/ready", async (_req, res) => {
     return res.json({
       ready: true,
-      version: process.env.PACKAGE_VERSION ?? "local",
+      version: process.env.npm_package_version ?? "local",
     });
   });
 
