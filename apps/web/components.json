@@ -8,10 +8,13 @@
     "cssVariables": true,
     "prefix": ""
   },
+  "iconLibrary": "lucide",
   "aliases": {
+    "components": "@/components",
+    "hooks": "@/hooks",
+    "lib": "@/lib",
     "utils": "@packagename/ui/lib/utils",
-    "components": "@packagename/ui/components",
-    "hooks": "@packagename/ui/hooks"
+    "ui": "@packagename/ui/components"
   },
   "rsc": true
 }

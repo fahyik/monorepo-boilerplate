@@ -3,7 +3,8 @@
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./src/*", "../../packages/ui/src/*"]
+      "@/*": ["./src/*", "../../packages/ui/src/*"],
+      "@packagename/ui/*": ["../../packages/ui/src/*"]
     }
   },
   "include": [
