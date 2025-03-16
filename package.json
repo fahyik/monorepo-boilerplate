@@ -9,6 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean",
+    "clean:all": "find . \\( -type d \\( -name '.next' -o -name '.turbo' -o -name 'node_modules' \\) -o -name '*.tsbuildinfo' \\) -exec rm -rf '{}' \\+",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
