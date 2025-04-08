@@ -1,20 +1,21 @@
-const onlyWarn = require("eslint-plugin-only-warn");
-const eslintConfigPrettier = require("eslint-config-prettier");
-const globals = require("globals");
-const eslint = require("@eslint/js");
-const turbo = require("eslint-plugin-turbo");
-const tseslint = require("typescript-eslint");
+import eslint from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
+import imprt from "eslint-plugin-import";
+import onlyWarn from "eslint-plugin-only-warn";
+import turbo from "eslint-plugin-turbo";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
-module.exports = [
+export default tseslint.config(
   {
     ignores: ["**/.*.js", "**/node_modules/", "**/dist/"],
   },
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
-
+  tseslint.configs.recommended,
   {
     plugins: {
       "only-warn": onlyWarn,
+      import: imprt,
       turbo,
     },
 
@@ -54,5 +55,5 @@ module.exports = [
       "no-undef": "off",
     },
   },
-  eslintConfigPrettier,
-];
+  eslintConfigPrettier
+);
