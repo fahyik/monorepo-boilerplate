@@ -25,4 +25,4 @@ This repo includes the following:
 - `@packagename/typescript-config`: tsconfig.json's used throughout the monorepo
 - `@packagename/jest-presets`: Jest configurations
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/) 
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/)
