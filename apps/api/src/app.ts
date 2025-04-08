@@ -22,10 +22,11 @@ export async function createServer() {
     .use(getHttpLogger(process.env.npm_package_name ?? "local"));
 
   app.get("/ready", async (_req, res) => {
-    return res.json({
+    res.status(200).json({
       ready: true,
       version: process.env.npm_package_version ?? "local",
     });
+    return;
   });
 
   const originsOnPublic: (string | RegExp)[] = [];
