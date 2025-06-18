@@ -20,7 +20,7 @@
     "express": "^5.1.0",
     "express-jwt": "^8.5.1",
     "knex": "^3.1.0",
-    "pg": "^8.14.1",
+    "pg": "^8.16.1",
     "uuid": "^11.1.0"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "@types/jest": "^29.5.14",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.15.18",
-    "@types/pg": "^8.11.11",
+    "@types/pg": "^8.15.4",
     "@types/uuid": "^10.0.0",
     "dotenv": "^16.4.7",
     "eslint": "^9.26.0",
