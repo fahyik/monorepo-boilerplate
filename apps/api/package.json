@@ -29,7 +29,7 @@
     "@packagename/jest-presets": "*",
     "@packagename/typescript-config": "*",
     "@types/body-parser": "^1.19.6",
-    "@types/cors": "^2.8.18",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/jest": "^29.5.14",
     "@types/morgan": "^1.9.9",
