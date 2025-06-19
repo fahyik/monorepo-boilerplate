@@ -28,7 +28,7 @@
     "@packagename/eslint-config": "*",
     "@packagename/jest-presets": "*",
     "@packagename/typescript-config": "*",
-    "@types/body-parser": "^1.19.5",
+    "@types/body-parser": "^1.19.6",
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1",
     "@types/jest": "^29.5.14",
