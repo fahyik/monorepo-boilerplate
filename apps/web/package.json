@@ -22,7 +22,7 @@
     "@packagename/eslint-config": "*",
     "@packagename/typescript-config": "*",
     "@tailwindcss/postcss": "^4.1.11",
-    "@types/node": "^22.15.18",
+    "@types/node": "^22.16.5",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "eslint": "^9.31.0",
