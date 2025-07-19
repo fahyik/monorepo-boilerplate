@@ -8,7 +8,7 @@ import {
   transports,
 } from "winston";
 
-import { asyncLocalStorage } from "./async-local-storage.js";
+import { asyncLocalStorage } from "./async-local-storage";
 
 export const log = (str: string) => {
   console.log("logger: " + str);
