@@ -22,7 +22,7 @@
     "@packagename/jest-presets": "*",
     "@packagename/typescript-config": "*",
     "@types/jest": "^30.0.0",
-    "@types/node": "^22.16.5",
+    "@types/node": "^22.18.0",
     "eslint": "^9.31.0",
     "jest": "^30.0.4",
     "typescript": "^5.8.3"
