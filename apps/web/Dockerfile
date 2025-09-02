@@ -1,4 +1,4 @@
-FROM node:22.18.0-alpine AS base
+FROM node:22.19.0-alpine AS base
 
 # This Dockerfile is copy-pasted into our main docs at /docs/handbook/deploying-with-docker.
 # Make sure you update both files!
