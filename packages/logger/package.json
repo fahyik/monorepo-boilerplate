@@ -17,6 +17,9 @@
   "jest": {
     "preset": "@packagename/jest-presets/node"
   },
+  "volta": {
+    "extends": "../../package.json"
+  },
   "devDependencies": {
     "@packagename/eslint-config": "*",
     "@packagename/jest-presets": "*",

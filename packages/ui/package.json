@@ -12,6 +12,9 @@
     "lint": "eslint \"**/*.ts*\" --max-warnings 0",
     "type-check": "tsc --noEmit"
   },
+  "volta": {
+    "extends": "../../package.json"
+  },
   "devDependencies": {
     "@packagename/eslint-config": "*",
     "@packagename/typescript-config": "*",
