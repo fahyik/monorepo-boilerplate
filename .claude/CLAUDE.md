@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Boilerplate/starter template for a Turborepo-based TypeScript monorepo with npm workspaces. `@packagename` is a placeholder scope — rename it throughout when forking for a real project. Uses npm (not yarn/pnpm/bun). Requires Node >= 22.22.1, npm >= 11.11.0.
+Boilerplate/starter template for a Turborepo-based TypeScript monorepo with npm workspaces. `@packagename` is a placeholder scope — rename it throughout when forking for a real project. Uses npm (not yarn/pnpm/bun). Requires Node >= 24.14.0, npm >= 11.11.0.
 
 ## Commands
 
