@@ -12,10 +12,25 @@
     "clean": "rm -rf dist",
     "dev": "tsc -w",
     "lint": "eslint \"src/**/*.ts*\" --max-warnings 0",
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "jest": {
-    "preset": "@packagename/jest-presets/node"
+    "preset": "@packagename/jest-presets/node",
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": [
+        "ts-jest",
+        {
+          "useESM": true,
+          "tsconfig": {
+            "module": "ESNext",
+            "moduleResolution": "NodeNext"
+          }
+        }
+      ]
+    }
   },
   "volta": {
     "extends": "../../package.json"

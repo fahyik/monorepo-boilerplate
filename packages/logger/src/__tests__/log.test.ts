@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals";
 import { log } from "..";
 
 jest.spyOn(global.console, "log");
