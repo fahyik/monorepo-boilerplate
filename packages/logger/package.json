@@ -40,7 +40,7 @@
     "@packagename/jest-presets": "*",
     "@packagename/typescript-config": "*",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.12.0",
+    "@types/node": "^24.13.3",
     "eslint": "^9.39.4",
     "jest": "^30.2.0",
     "typescript": "^5.9.3"
