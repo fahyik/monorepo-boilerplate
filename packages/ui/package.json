@@ -18,12 +18,12 @@
   "devDependencies": {
     "@packagename/eslint-config": "*",
     "@packagename/typescript-config": "*",
-    "@tailwindcss/postcss": "^4.2.1",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
     "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.1",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3"
   },
   "dependencies": {
